@@ -7,6 +7,7 @@ import { StartpageComponent } from './startpage/startpage.component';
 import { QuestionpageComponent } from './questionpage/questionpage.component';
 import { ResultspageComponent } from './resultspage/resultspage.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { QuestionlogicService } from './questionlogic.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AppRoutingModule } from './/app-routing.module';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [QuestionlogicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

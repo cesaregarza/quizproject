@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionlogicService } from '../questionlogic.service';
 
 @Component({
   selector: 'app-questionpage',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private questionlogicService: QuestionlogicService) {}
 
   ngOnInit() {
   }
