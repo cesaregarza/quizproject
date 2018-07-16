@@ -1,0 +1,32 @@
+.parallax {
+        background: url(https://img00.deviantart.net/7d08/i/2012/249/6/1/the_avengers_wallpaper_by_omarmohsen-d5drlu9.jpg
+       );
+        height: 800px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+}
+
+h1 {
+    text-align: center;
+    color: white;
+   
+}
+
+h2 {
+    color: white;
+    margin-top: 30px;
+    
+}
+
+.btn-danger {
+    border: none;
+    background-color: inherit;
+    padding: 20px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+}
