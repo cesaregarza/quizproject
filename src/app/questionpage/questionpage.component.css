@@ -1,0 +1,60 @@
+.down {
+    margin-top: 250px;
+}
+
+.A {
+    margin-left: 0px;
+}
+
+.QT {
+    margin-left: -10px;
+}
+
+.QT1 {
+    margin-right: 25px;
+}
+
+.QT2 {
+    margin-right: 33px;
+}
+
+.QT3 {
+    margin-right: 15px;
+}
+
+.QT4 {
+    margin-right: 10px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.left {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rightM {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.right {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 200px;
+}
+
+.btn-right {
+    float: right;
+}
+
+.pad {
+    padding: 11px;
+    text-align: center;
+    font-size: 20px;
+}
