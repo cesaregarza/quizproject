@@ -10,11 +10,11 @@ const routes: Routes = [
     component: StartpageComponent
   },
   {
-    path: "questionpage/:id",
+    path: "questions/:page",
     component: QuestionpageComponent
   },
   {
-    path: "resultspage",
+    path: "results",
     component: ResultspageComponent
   },
   {

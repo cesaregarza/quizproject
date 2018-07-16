@@ -8,7 +8,10 @@ import { QuestionlogicService } from '../questionlogic.service';
 })
 export class QuestionpageComponent implements OnInit {
 
-  constructor(private questionlogicService: QuestionlogicService) {}
+  constructor(private qls: QuestionlogicService) {
+    this.qls = qls;
+  }
+
 
   ngOnInit() {
   }
