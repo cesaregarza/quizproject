@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.parallax {
+    background: url(https://www.quirkybyte.com/wp-content/uploads/2018/01/avengers-infinity-war-comic-pictures-On-High-Resolution-Wallpaper-e1519280534144.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
