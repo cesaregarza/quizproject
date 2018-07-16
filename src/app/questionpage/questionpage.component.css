@@ -54,5 +54,7 @@
 }
 
 .pad {
-    padding: 27px;
+    padding: 11px;
+    text-align: center;
+    font-size: 20px;
 }
