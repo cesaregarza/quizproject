@@ -23,6 +23,14 @@ export class QuestionlogicService {
   result = {};
   heroes = heroList;
 
+  startQuiz(){
+    this.page = 1;
+    for(let i = 0; i < this.qArray.length; i++){
+      this.qArray[i].value = 3;
+    }
+    this.router.navigate(["/questions", this.page]);
+  }
+
   nextQuestions(){
     //If the next page's first question has an index that would be smaller than the questions array, we will allow it to navigate to the next page. Otherwise, we'll calculate the results and go to the results page.
     if (this.qArray.length < (this.page * this.qPerPage)){
@@ -46,14 +54,15 @@ export class QuestionlogicService {
 
   calculateResults(){
     //For Loop
-    //Purpose: Go through the Questions Array, and tally up the results in this.tally. The index of where the tally will be modified is given by the type property. Additionally, find the max value possible for variables c and d.
+    //Purpose: Go through the Questions Array, and tally up the results in this.tally. The index of where the tally will be modified is given by the type property. The reverse property will reverse the sign if it is defined as true. Additionally, find the max value possible for variables c and d. 
     for (let i = 0; i < this.qArray.length; i++){
       let qtype = this.qArray[i].type;
+      let sign = (this.qArray[i].reverse == true) ? 1 : -1;
       if (qtype >= 2){
         this.maxtally[qtype - 2]+= 2;
       }
       
-      this.tally[qtype] += this.qArray[i].value - 3;
+      this.tally[qtype] += (this.qArray[i].value - 3) * sign;
     }
 
     //For Loop

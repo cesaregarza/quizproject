@@ -13,12 +13,12 @@ export const heroList: heroClass[] = [
         description: "You are Thor, the god of thunder! Though you're somewhat of an outsider, you rely on your inner strength rather than tools to help you get ahead. You think rationally under pressure, and are a great leader."
     },
     {
-        name: "Vision",
-        description: "You are Vision! Though your origins gave you a purpose, you're strongly determined to forge your own path independent of that purpose! You're extremely powerful and intelligent, but very humble and friendly."
-    },
-    {
         name: "Scarlet Witch",
         description: "You are the Scarlet Witch! Nobody can explain why you're so powerful, but you are! You've overcome tragedy and misfortune to become a priceless part of whatever team you find yourself on, and are always an asset people can count on."
+    },
+    {
+        name: "Vision",
+        description: "You are Vision! Though your origins gave you a purpose, you're strongly determined to forge your own path independent of that purpose! You're extremely powerful and intelligent, but very humble and friendly."
     },
     {
         name: "Star-Lord",
@@ -26,46 +26,46 @@ export const heroList: heroClass[] = [
     },
     {
         name: "Gamora",
-        description: "You are Gamora! Though you have a little bit of a tragic past, you're incredibly strong. "
+        description: "You are Gamora! Though you have a little bit of a tragic past, you're incredibly strong. Despite not being super-powered, you've managed to use your skill to overcome the gaps and become an integral part of your team!"
     },
     {
         name: "Deadpool",
-        description: ""
+        description: "You are Deadpool! The merc with a mouth, you've managed to make the best of every situation you've come across. You're witty and dependable, but nobody is quite sure what you'll do next!"
     },
     {
         name: "Black Panther",
-        description: ""
+        description: "You are the Black Panther! As King of Wakanda, you're a strong leader for your people. Through your powerful will, you protect those you treasure more than life itself. You're well-liked by those around you, and you can find belonging anywhere you are"
     },
     {
         name: "Loki",
-        description: ""
+        description: "You are Loki! Calling you a hero might be a bit of a stretch, but you aren't a villain either. While you might be unpredictable, you tend to do the right thing, even if it's not exactly what others might think is right."
     },
     {
         name: "Mantis",
-        description: ""
+        description: "You are Mantis! While you're humble and a little bit of an outsider, you're an invaluable asset to your team! You're very in-tune with your emotions and the emotions of others, and can influence how others around you feel"
     },
     {
         name: "Hulk",
-        description: ""
+        description: "You are the incredible Hulk! You're very intelligent and meek, but you are no pushover! A modern day Jekyll and Hyde, you will 'Hulk Out' when you're angered. Despite that, you're an invaluable addition to your group of friends, pushing them to conquer even the greatest challenges"
     },
     {
         name: "Dr. Strange",
-        description: ""
+        description: "You are Doctor Strange! A very intelligent, but stubborn person, you will not let anything slow you down. Obstacles are more like suggestions to you, and your tenacity lets you accomplish what others can only dream of."
     },
     {
         name: "Rocket Raccoon",
-        description: ""
+        description: "You are Rocket! Mischevious and clever, but with a heart of gold. You don't really fit in with most people, but you and your friends are like peas in a pod. You're always the brains, but they frequently have to prevent you from blowing up their plans."
     },
     {
         name: "Thanos",
-        description: ""
+        description: "You are Thanos! Perfectly Balanced."
     },
     {
         name: "Iron Man",
-        description: ""
+        description: "You are Iron Man! You're as snarky as you are brilliant. You're a man of action, preferring to get things done than to write or read about things. You care about those around you and you use your brilliance to help those around you in any way that you can."
     },
     {
         name: "Captain America",
-        description: ""
+        description: "You are Captain America! A paragon of virtue, you're someone people can depend on. A leader of leaders, you make people pay attention to your every word. You are the avatar of dependibility, and everyone knows exactly where you stand on every issue."
     }
 ]

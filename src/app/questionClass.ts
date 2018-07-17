@@ -7,4 +7,5 @@ export class qClass{
     name: string;
     value: number;
     type: number;
+    reverse?: boolean;
 }

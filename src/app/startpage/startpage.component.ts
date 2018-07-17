@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { QuestionlogicService } from '../questionlogic.service';
 
 @Component({
   selector: 'app-startpage',
@@ -8,8 +8,10 @@ import { Router } from '@angular/router';
 })
 export class StartpageComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private qls: QuestionlogicService) {
+    this.qls = qls;
+  }
+  
   ngOnInit() {
   }
 
