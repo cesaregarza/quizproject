@@ -8,7 +8,7 @@ import { QuestionlogicService } from '../questionlogic.service';
 })
 export class ResultspageComponent implements OnInit {
 
-  constructor(private qls: QuestionlogicService) {
+  constructor(public qls: QuestionlogicService) {
     this.qls = qls;
   }
 
