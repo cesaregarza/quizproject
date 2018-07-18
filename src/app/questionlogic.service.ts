@@ -33,6 +33,8 @@ export class QuestionlogicService {
     this.tally = [0, 0, 0, 0];
     this.tallyxor = 0;
     this.maxtally = [0,0];
+    this.nButtoni = 0;
+    this.pButtoni = 1;
     for (let i = 0; i < this.qArray.length; i++) {
       this.qArray[i].value = 3;
     }
