@@ -17,11 +17,16 @@ export class QuestionlogicService {
   page = 1;
   qArray = quizQuestions;
   qPerPage = 3;
+  maxpage = Math.abs(this.qArray.length / this.qPerPage);
   tally = [0, 0, 0, 0];
   tallyxor = 0;
   maxtally = [0, 0];
   heroes = heroList;
   result = this.heroes[0];
+  nButton = ["Next Page", "Evaluate!"];
+  nButtoni = 0;
+  pButton = ["Prev Page", "To Start"];
+  pButtoni = 1;
 
   startQuiz() {
     this.page = 1;
@@ -38,6 +43,8 @@ export class QuestionlogicService {
     //If the next page's first question has an index that would be smaller than the questions array, we will allow it to navigate to the next page. Otherwise, we'll calculate the results and go to the results page.
     if (this.qArray.length > (this.page * this.qPerPage)) {
       this.page++;
+      this.pButtoni = 0;
+      this.nButtoni = (this.page == this.maxpage) ? 1 : 0;
       this.router.navigate(["/questions", this.page]);
     } else {
       this.calculateResults();
@@ -49,6 +56,8 @@ export class QuestionlogicService {
     //So long as the page we're on isn't the first page, we'll go back one page. Otherwise, we'll go back to the start page.
     if (this.page != 1) {
       this.page--;
+      this.nButtoni = 0;
+      this.pButtoni = (this.page == 1) ? 1 : 0;
       this.router.navigate(["/questions", this.page]);
     } else {
       this.router.navigate([""]);

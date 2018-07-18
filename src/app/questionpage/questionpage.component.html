@@ -25,9 +25,9 @@
         </div>
         <!-- Footer -->
         <div class="card-footer d-flex flex-row align-items-center">
-          <button *ngIf="qls.showClass(i,0)" class="btn btn-outline-dark mr-auto" (click)="qls.prevQuestions()">Prev Page</button>
-          <div *ngIf="qls.showClass(i,1)" class="text-muted mx-auto">Page: {{ qls.page }} </div>
-          <button *ngIf="qls.showClass(i,2)" class="btn btn-outline-dark ml-auto" (click)="qls.nextQuestions()">Next Page</button>
+          <button *ngIf="qls.showClass(i,0)" class="btn btn-outline-dark mr-auto" (click)="qls.prevQuestions()">{{ qls.pButton[qls.pButtoni] }}</button>
+          <div *ngIf="qls.showClass(i,1)" class="text-muted mx-auto">Page: {{ qls.page }} of {{ qls.maxpage }}</div>
+          <button *ngIf="qls.showClass(i,2)" class="btn btn-outline-dark ml-auto" (click)="qls.nextQuestions()">{{ qls.nButton[qls.nButtoni] }}</button>
         </div>
       </div>
     </ng-container>
