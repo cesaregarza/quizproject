@@ -1,4 +1,16 @@
-<div class="card">
-  <div class="card-header">{{ qls.result.name }}</div>
-  <div> {{ qls.result.description }}</div>
+<div class="bigbox d-flex flex-row justify-content-around">
+  <div class="boundbox d-flex">
+    <div class="card mx-auto my-auto rcard text-center">
+      <div class="card-header">{{ qls.result.name }} {{ qls.tally }}</div>
+      <div class="rcardbody"> {{ qls.result.description }}</div>
+      <div class="card-footer mt-auto">
+        <button class="btn btn-outline-dark" (click)="qls.startQuiz();">Start Over</button>
+      </div>
+    </div>
+  </div>
+  <div class="imgcontainer d-flex">
+    <div class="my-auto">
+      <img src="{{ qls.result.imgurl }}" id="resultimg">
+    </div>
+  </div>
 </div>

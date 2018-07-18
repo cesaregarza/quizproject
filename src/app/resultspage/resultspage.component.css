@@ -1,0 +1,25 @@
+.imgcontainer{
+    width: 40%;
+    height: 100%;
+}
+.imgcontainer > div > img {
+    object-fit: cover;
+    height: 50vh;
+    max-width: 100%;
+}
+
+.bigbox {
+    height: 100vh;
+}
+
+.rcard{
+    width: 80%;
+    height: 50vh;
+}
+.boundbox {
+    width: 40%;
+    height: 100vh;
+}
+.rcardbody {
+    overflow-y: scroll;
+}
