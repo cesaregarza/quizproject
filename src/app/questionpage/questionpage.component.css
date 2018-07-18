@@ -58,3 +58,23 @@
     text-align: center;
     font-size: 20px;
 }
+
+.qcard{
+    width: 30%;
+}
+
+.qcardheader {
+    word-break: break-word;
+    overflow-y: scroll;
+    height: 60px;
+}
+
+.radioforloop {
+    height: 60px;
+    width: 20%;
+    font-size: 0.65rem;
+}
+
+.card-footer {
+    height: 70px;
+}

@@ -1,5 +1,38 @@
 <body>
-        <div class="card down left">
+  <div class="d-flex flex-row justify-content-between align-items-center parallax">
+    <ng-container *ngFor="let question of qls.qArray; let i = index">
+      <div *ngIf="qls.displayQuestions(i)" class="card d-flex flex-column qcard mx-3">
+        <div class="card-header">
+          Question {{ i + 1 }}
+        </div>
+        <div class="text-center qcardheader">
+          {{ question.name }}
+        </div>
+        <!-- hr goes here -->
+        <div class="row">
+          <div class="col-12">
+            <hr>
+          </div>
+        </div>
+        <!-- Radios go here -->
+        <div>
+          <form class="d-flex flex-row justify-content-around align-items-start">
+            <div *ngFor="let number of qls.numbers" class="form-check-inline form-check mx-0 radioforloop d-flex flex-column text-center">
+                <div><input class="form-check-input" type="radio" name="inlineRadioOptions" id="q_{{i}}_{{number}}" [value]="number" [(ngModel)] = "question.value"></div>
+                <div>{{qls.options[number - 1]}}</div>
+            </div>
+          </form>
+        </div>
+        <!-- Footer -->
+        <div class="card-footer d-flex flex-row align-items-center">
+          <button *ngIf="qls.showClass(i,0)" class="btn btn-outline-dark mr-auto" (click)="qls.prevQuestions()">Prev Page</button>
+          <div *ngIf="qls.showClass(i,1)" class="text-muted mx-auto">Page: {{ qls.page }} </div>
+          <button *ngIf="qls.showClass(i,2)" class="btn btn-outline-dark ml-auto" (click)="qls.nextQuestions()">Next Page</button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <!-- <div class="card down left">
           <div class="card-body">
             <h5 class="card-title">Question goes right here.....?</h5>
             <form>
@@ -97,5 +130,5 @@
           <div class="card-footer pad">
             <small class="text-muted">Page: 1</small>
           </div>
-        </div>
+        </div>-->
 </body>

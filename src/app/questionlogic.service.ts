@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { qClass } from './questionclass';
 import { quizQuestions } from './questions';
 import { heroList } from './heroList';
 
@@ -13,8 +12,9 @@ export class QuestionlogicService {
     this.router = router;
    }
 
-  
-  page = 0;
+  numbers = [1, 2, 3, 4, 5];
+  options = ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"];
+  page = 1;
   qArray = quizQuestions;
   qPerPage = 3;
   tally = [0, 0, 0, 0];
@@ -33,7 +33,7 @@ export class QuestionlogicService {
 
   nextQuestions(){
     //If the next page's first question has an index that would be smaller than the questions array, we will allow it to navigate to the next page. Otherwise, we'll calculate the results and go to the results page.
-    if (this.qArray.length < (this.page * this.qPerPage)){
+    if (this.qArray.length > (this.page * this.qPerPage)){
       this.page++;
       this.router.navigate(["/questions", this.page]);
     } else {
@@ -84,9 +84,8 @@ export class QuestionlogicService {
     return (Math.floor(input / this.qPerPage) + 1 == this.page)
   }
 
-  showClass(input: number){
-    let temp = ["left", "middle", "right"];
-    return temp[ input % this.qPerPage];
+  showClass(input: number, testagainst: number){
+    return ((input % 3) == testagainst);
   }
 
 }
