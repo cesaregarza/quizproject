@@ -25,6 +25,9 @@ export class QuestionlogicService {
 
   startQuiz() {
     this.page = 1;
+    this.tally = [0, 0, 0, 0];
+    this.tallyxor = 0;
+    this.maxtally = [0,0];
     for (let i = 0; i < this.qArray.length; i++) {
       this.qArray[i].value = 3;
     }
